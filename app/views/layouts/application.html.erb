@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Congress</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "//cdn.jsdelivr.net/foundation/5.2.1/css/foundation.css" %>
+  
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main-yield" class="row">
+  <%= yield %>
+</div>
+
+
+</body>
+</html>

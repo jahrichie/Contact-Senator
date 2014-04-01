@@ -1,0 +1,9 @@
+== Welcome to click2congress
+
+This app 
+
+1. Takes your address or zip code, geoencodes that to latitude/longitude using an google maps api.
+2. Looks up your State Senator by said (1) latitude/longitude
+3. Show contact information and 2 actions to connect yourself and your senator on a 3 way call using twilio, or send them an email.
+
+1   view/javascript file, two-three controller actions, a few routes, and a lighting fast experience.

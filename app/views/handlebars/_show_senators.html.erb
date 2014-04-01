@@ -1,0 +1,41 @@
+<div class-"large-6 columns">
+  <input id="address-lookup" type="text" name="zip_code" placeholder="Enter valid ny address like: 416 E7rd New York, ny">
+</div>
+
+<div class-"large-6 columns">
+  <input class="button get-geolocation" type="submit" value="Find my Senator">
+</div>
+
+
+<script id="show-senators" type="text/x-handlebars-template">
+  <table style="width:100%">
+    <thead>
+      <th></th>
+      <th>Name</th>
+      <th>email</th>
+      <th>party</th>
+      <th>phone</th>
+      <th>click2call</th>
+    </thead>
+    <tbody>
+      {{#senators}}
+        <tr>
+          <td><img src="{{photo_url}}" style="max-width:150px;"></img></td>
+          <td>{{first_name}} {{last_name}} </td>
+          <td>{{email}}  <a style="font-size:2em" href="mailto:{{email}}?subject=I am a voter in your district, and you need to read this&body=I support Except Farmworkers, a campaign to win basic rights for New York Farmworkers, a program of the RFK Center here in New York.  I strongly urge you to do the same. Please contact me."><i class="fa fa-envelope"></i></a> </td>
+           <td>{{party}} </td>
+           <td>
+              {{#offices}}
+                 {{name}} {{phone}} <br>
+              {{/offices}}
+           </td>
+          <td>
+            <a href="#"  data-role="button"> 
+              <i data-full-name="{{full_name}}" style="font-size:2EM;color:#6BAC36" class="ask-for-number-modal fa fa-phone-square"></i>
+            </a>
+          </td>
+        </tr>
+      {{/senators}}
+    </tbody>
+  </table>
+</script>
